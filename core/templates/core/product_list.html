@@ -3,13 +3,13 @@
 {% block title %}Товары{% endblock %}
 
 {% block content %}
-    <h1>Товары</h1>
+    <h2>Все товары</h2>
     <div class="product-grid">
         {% for product in products %}
             <div class="product-card">
+                <div class="category-tag">{{ product.category.name }}</div>
                 <h3>{{ product.name }}</h3>
-                <p>{{ product.price }} ₸</p>
-                <p>{{ product.category.name }}</p>
+                <div class="price">{{ product.price }} ₸</div>
             </div>
         {% empty %}
             <p>Товаров пока нет.</p>

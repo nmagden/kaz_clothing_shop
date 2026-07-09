@@ -3,14 +3,18 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Kaz Clothing Shop{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
         <nav>
-            <a href="{% url 'home' %}">Главная</a>
-            <a href="{% url 'product_list' %}">Товары</a>
+            <a href="{% url 'home' %}" class="logo">KAZ SHOP</a>
+            <div class="nav-links">
+                <a href="{% url 'home' %}">Главная</a>
+                <a href="{% url 'product_list' %}">Товары</a>
+            </div>
         </nav>
     </header>
 

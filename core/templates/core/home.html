@@ -3,9 +3,13 @@
 {% block title %}Главная — Kaz Clothing Shop{% endblock %}
 
 {% block content %}
-    <h1>Добро пожаловать в Kaz Clothing Shop</h1>
+    <section class="hero">
+        <h1>Одежда, которая говорит за тебя</h1>
+        <p>Новая коллекция уже в каталоге</p>
+    </section>
+
     <h2>Категории</h2>
-    <ul>
+    <ul class="category-list">
         {% for category in categories %}
             <li>{{ category.name }}</li>
         {% empty %}
