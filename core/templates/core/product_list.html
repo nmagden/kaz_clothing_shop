@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Товары{% endblock %}
+
+{% block content %}
+    <h1>Товары</h1>
+    <div class="product-grid">
+        {% for product in products %}
+            <div class="product-card">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.price }} ₸</p>
+                <p>{{ product.category.name }}</p>
+            </div>
+        {% empty %}
+            <p>Товаров пока нет.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

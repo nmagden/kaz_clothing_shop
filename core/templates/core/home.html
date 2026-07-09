@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Главная — Kaz Clothing Shop{% endblock %}
+
+{% block content %}
+    <h1>Добро пожаловать в Kaz Clothing Shop</h1>
+    <h2>Категории</h2>
+    <ul>
+        {% for category in categories %}
+            <li>{{ category.name }}</li>
+        {% empty %}
+            <li>Категорий пока нет</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
