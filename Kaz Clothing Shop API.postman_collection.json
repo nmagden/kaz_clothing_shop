@@ -26,7 +26,7 @@
           }
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/orders/",
+          "raw": "http://127.0.0.1:8000/api/register/",
           "protocol": "http",
           "host": ["127", "0", "0", "1"],
           "port": "8000",
