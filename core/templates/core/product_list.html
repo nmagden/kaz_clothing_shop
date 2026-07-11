@@ -4,13 +4,19 @@
 
 {% block content %}
     <h2>Все товары</h2>
+
+    <form method="get" class="filter-form">
+        {{ form.as_p }}
+        <button type="submit">Применить фильтр</button>
+    </form>
+
     <div class="product-grid">
         {% for product in products %}
-            <div class="product-card">
+            <a href="{% url 'product_detail' product.pk %}" class="product-card">
                 <div class="category-tag">{{ product.category.name }}</div>
                 <h3>{{ product.name }}</h3>
                 <div class="price">{{ product.price }} ₸</div>
-            </div>
+            </a>
         {% empty %}
             <p>Товаров пока нет.</p>
         {% endfor %}

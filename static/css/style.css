@@ -154,3 +154,44 @@ h2 {
     margin-bottom: 16px;
     font-size: 14px;
 }
+
+.auth-form, .filter-form, .add-form {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 400px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+
+.auth-form p, .filter-form p, .add-form p {
+    margin-bottom: 12px;
+}
+
+.auth-form input, .filter-form input, .filter-form select, .add-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+.auth-form button, .filter-form button, .add-form button {
+    background: #EE1C25;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-form button:hover, .filter-form button:hover, .add-form button:hover {
+    background: #C41519;
+}
+
+a.product-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}

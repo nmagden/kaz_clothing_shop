@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p class="price">{{ product.price }} ₸</p>
+    <p>Категория: {{ product.category.name }}</p>
+    <p>В наличии: {{ product.stock }}</p>
+
+    {% if user.is_authenticated %}
+        <form method="post" class="add-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Добавить в заказ</button>
+        </form>
+    {% else %}
+        <p><a href="{% url 'login' %}">Войдите</a>, чтобы добавить товар в заказ</p>
+    {% endif %}
+{% endblock %}
