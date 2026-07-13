@@ -28,3 +28,4 @@ python manage.py runserver
 ## Project Setup
 ## Requirements
 ## Installation Guide
+## API Endpoints
