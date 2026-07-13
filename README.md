@@ -26,3 +26,4 @@ python manage.py migrate
 python manage.py runserver
 ```
 ## Project Setup
+## Requirements
