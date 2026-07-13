@@ -30,3 +30,4 @@ python manage.py runserver
 ## Installation Guide
 ## API Endpoints
 ## Contributing
+## License
