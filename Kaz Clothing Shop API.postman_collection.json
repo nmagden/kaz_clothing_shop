@@ -1,8 +1,10 @@
 {
   "info": {
+    "_postman_id": "72c91c7a-9ef6-422c-bf29-f725da32d6fc",
     "name": "Kaz Clothing Shop API",
-    "_postman_id": "B7bfd4fAA06daBe401A32160",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56652352",
+    "_collection_link": "https://go.postman.co/collection/56652352-72c91c7a-9ef6-422c-bf29-f725da32d6fc?source=collection_link"
   },
   "item": [
     {
@@ -26,13 +28,103 @@
           }
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/register/",
+          "raw": "http://127.0.0.1:8000/api/orders/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "orders", ""]
+          "path": [
+            "api",
+            "orders",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Register",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"testuser\",\r\n    \"email\": \"testuser@example.com\",\r\n    \"password\": \"testpass123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/register/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "register",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:34:59 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Cookie, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "OPTIONS, POST"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "64"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"token\": \"219b9774b21cda405c62587a90aa474be2c09228\",\n    \"user_id\": 1\n}"
+        }
+      ]
     },
     {
       "name": "Login",
@@ -51,11 +143,101 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/login/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "login", ""]
+          "path": [
+            "api",
+            "login",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"testuser\",\r\n    \"password\": \"testpass123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/login/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "login",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:36:33 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Cookie, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "OPTIONS, POST"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "52"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"token\": \"219b9774b21cda405c62587a90aa474be2c09228\"\n}"
+        }
+      ]
     },
     {
       "name": "Logout",
@@ -80,34 +262,116 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/logout/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "logout", ""]
+          "path": [
+            "api",
+            "logout",
+            ""
+          ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "Get Categories",
       "request": {
         "method": "GET",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
           "raw": "http://127.0.0.1:8000/api/categories/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "categories", ""]
+          "path": [
+            "api",
+            "categories",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Get Categories",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:43:05 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Cookie, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "OPTIONS, GET"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "42"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Hoodie\",\n        \"slug\": \"hoodie\"\n    }\n]"
+        }
+      ]
     },
     {
       "name": "Get Products",
@@ -117,11 +381,92 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/products/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "products", ""]
+          "path": [
+            "api",
+            "products",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Get Products",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/products/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "products",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:43:13 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Cookie, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "OPTIONS, GET"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "155"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"category\": 1,\n        \"category_name\": \"Hoodie\",\n        \"name\": \"\\\"west side\\\"\",\n        \"description\": \"hoodie\",\n        \"price\": \"20000.00\",\n        \"size\": \"M\",\n        \"stock\": 10,\n        \"is_available\": true\n    }\n]"
+        }
+      ]
     },
     {
       "name": "Get Orders",
@@ -137,11 +482,98 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/orders/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "orders", ""]
+          "path": [
+            "api",
+            "orders",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Get Orders",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Token 219b9774b21cda405c62587a90aa474be2c09228",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/orders/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "orders",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:48:38 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "GET, POST, HEAD, OPTIONS"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "197"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"user\": 1,\n        \"status\": \"pending\",\n        \"created_at\": \"2026-07-15T12:48:20.184364Z\",\n        \"items\": [\n            {\n                \"id\": 1,\n                \"product\": 1,\n                \"product_name\": \"\\\"west side\\\"\",\n                \"quantity\": 2,\n                \"subtotal\": 40000\n            }\n        ],\n        \"total_price\": 40000\n    }\n]"
+        }
+      ]
     },
     {
       "name": "Create Order",
@@ -166,11 +598,107 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/orders/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "orders", ""]
+          "path": [
+            "api",
+            "orders",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Create Order",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Token 219b9774b21cda405c62587a90aa474be2c09228",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"items\": [\r\n        {\"product_id\": 1, \"quantity\": 2}\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/orders/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "orders",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:48:20 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "GET, POST, HEAD, OPTIONS"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "195"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"user\": 1,\n    \"status\": \"pending\",\n    \"created_at\": \"2026-07-15T12:48:20.184364Z\",\n    \"items\": [\n        {\n            \"id\": 1,\n            \"product\": 1,\n            \"product_name\": \"\\\"west side\\\"\",\n            \"quantity\": 2,\n            \"subtotal\": 40000\n        }\n    ],\n    \"total_price\": 40000\n}"
+        }
+      ]
     },
     {
       "name": "Update Order",
@@ -195,11 +723,22 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/orders/5/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "orders", "5", ""]
+          "path": [
+            "api",
+            "orders",
+            "5",
+            ""
+          ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "Delete Order",
@@ -224,11 +763,105 @@
         "url": {
           "raw": "http://127.0.0.1:8000/api/orders/5/",
           "protocol": "http",
-          "host": ["127", "0", "0", "1"],
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
           "port": "8000",
-          "path": ["api", "orders", "5", ""]
+          "path": [
+            "api",
+            "orders",
+            "5",
+            ""
+          ]
         }
-      }
+      },
+      "response": [
+        {
+          "name": "Delete Order",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Token 219b9774b21cda405c62587a90aa474be2c09228",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/orders/1/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "orders",
+                "1",
+                ""
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 15 Jul 2026 12:50:13 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "WSGIServer/0.2 CPython/3.14.5"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "GET, PUT, DELETE, HEAD, OPTIONS"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Length",
+              "value": "0"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
     }
   ]
 }
